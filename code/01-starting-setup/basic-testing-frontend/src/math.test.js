@@ -1,7 +1,7 @@
 import {it,expect} from 'vitest';
 import {add} from './math'
 
-it('should sumarize all number values in an array', ()=>{
+it('should sumarize all number values in an array', () =>{
     //Arrange
     const numbers = [1,2];
     //Act
@@ -13,7 +13,7 @@ it('should sumarize all number values in an array', ()=>{
     expect(result).toBe(expectedResult);
 });
 
-it('should yield NaN if a least one invalid number is provided', ()=>{
+it('should yield NaN if a least one invalid number is provided', () =>{
     //Arrange
     const inputs = ['invalid',1]
     //Act
