@@ -2,7 +2,7 @@
 import {it,expect} from 'vitest';
 import {transformToNumber} from './numbers';
 
-it('should transform a string to a number if a string is provided'), () => {
+it('should transform a string number to a number of type number'), () => {
     //Arrange
     const string = '2';
     //Act
@@ -36,6 +36,7 @@ it('should return NaN if a string not numerical is passed'), () => {
     //Act
     const result = transformToNumber(string);
     //Assert
-    expect(result).toBe('NaN');
+    //expect(result).toBe('NaN');
+    expect(result).toBeNaN();
 };
 
